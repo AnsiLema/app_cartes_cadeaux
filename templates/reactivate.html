@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réactiver la carte cadeau</title>
+</head>
+<body>
+    <h1>Votre carte {{ card_code }} est expirée.</h1>
+    <p>Pour la réactiver, un paiement de 20 euros est requis.</p>
+    <form action="/pay" method="POST">
+        <input type="hidden" name="card_code" value="{{ card_code }}">
+        <button type="submit">Payer 20 euros pour réactiver</button>
+    </form>
+</body>
+</html>
