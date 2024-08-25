@@ -42,7 +42,7 @@ def pay():
         cartes_cadeaux[card_code]["expiration_date"] = datetime.now() + timedelta(days=365)
         return f"La carte {card_code} a été réactivée avec succès pour 1 an supplémentaire!"
     else:
-        return "Erreur: Carte non-trouvée."
+        return "Erreur: Carte non trouvée."
 
 
 
